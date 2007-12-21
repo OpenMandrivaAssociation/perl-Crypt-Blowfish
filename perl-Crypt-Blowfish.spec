@@ -12,6 +12,7 @@ Group:		Development/Perl
 Source:		http://search.cpan.org/CPAN/authors/id/D/DP/DPARIS/%{module}-%{version}.tar.bz2
 Url:            http://search.cpan.org/dist/%{module}/
 Buildrequires:	 perl-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Perl module to encrypt using the Blowfish algorithm.
