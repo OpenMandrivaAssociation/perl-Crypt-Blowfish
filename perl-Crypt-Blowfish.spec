@@ -1,24 +1,24 @@
-%define module	Crypt-Blowfish
-%define name	perl-%{module}
-%define version 2.10
-%define release %mkrel 5
+%define upstream_name	 Crypt-Blowfish
+%define upstream_version 2.10
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Perl Blowfish encryption module
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/D/DP/DPARIS/%{module}-%{version}.tar.bz2
-Url:            http://search.cpan.org/dist/%{module}/
+Url:            http://search.cpan.org/dist/%{upstream_name}/
+Source0:	http://search.cpan.org/CPAN/authors/id/D/DP/DPARIS/%{upstream_name}-%{upstream_version}.tar.bz2
+
 Buildrequires:	 perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Perl module to encrypt using the Blowfish algorithm.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -40,4 +40,3 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Crypt
 %{perl_vendorarch}/auto/Crypt
 %{_mandir}/*/*
-
