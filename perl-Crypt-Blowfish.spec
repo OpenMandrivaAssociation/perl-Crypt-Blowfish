@@ -1,5 +1,5 @@
 %define upstream_name	 Crypt-Blowfish
-%define upstream_version 2.11a
+%define upstream_version 2.12
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -18,8 +18,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 Perl module to encrypt using the Blowfish algorithm.
 
 %prep
-##%setup -q -n %{upstream_name}-%{upstream_version}
-%setup -q -n %{upstream_name}-2.11
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
