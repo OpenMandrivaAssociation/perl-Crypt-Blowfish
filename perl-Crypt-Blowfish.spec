@@ -1,14 +1,14 @@
 %define modname	Crypt-Blowfish
-%define modver	2.12
+%define modver 2.14
 
 Summary:	Perl Blowfish encryption module
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DP/DPARIS/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/authors/id/D/DP/DPARIS/Crypt-Blowfish-%{modver}.tar.gz
 Buildrequires:	perl-devel
 
 %description
@@ -32,4 +32,5 @@ Perl module to encrypt using the Blowfish algorithm.
 %{perl_vendorarch}/Crypt
 %{perl_vendorarch}/auto/Crypt
 %{_mandir}/man3/*
+
 
