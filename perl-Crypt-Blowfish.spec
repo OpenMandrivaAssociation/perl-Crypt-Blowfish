@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 6
+Release:    7
 
 Summary:	Perl Blowfish encryption module
 License:	GPL+ or Artistic
