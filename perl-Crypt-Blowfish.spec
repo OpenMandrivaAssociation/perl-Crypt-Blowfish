@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
 Source0:	http://www.cpan.org/authors/id/D/DP/DPARIS/Crypt-Blowfish-%{modver}.tar.gz
 Buildrequires:	perl-devel
+Buildrequires:	glibc-devel
 
 %description
 Perl module to encrypt using the Blowfish algorithm.
