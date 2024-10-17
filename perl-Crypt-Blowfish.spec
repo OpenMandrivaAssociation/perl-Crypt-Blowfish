@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	10
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}/
+Url:		https://search.cpan.org/dist/%{modname}/
 Source0:	http://www.cpan.org/authors/id/D/DP/DPARIS/Crypt-Blowfish-%{modver}.tar.gz
 Buildrequires:	perl-devel
 Buildrequires:	glibc-devel
