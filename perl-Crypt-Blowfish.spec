@@ -3,12 +3,12 @@
 
 Summary:	Perl Blowfish encryption module
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	12
+Version:	%{modver}
+Release:	13
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}/
-Source0:	http://www.cpan.org/authors/id/D/DP/DPARIS/Crypt-Blowfish-%{modver}.tar.gz
+Url:		https://metacpan.org/dist/Crypt-Blowfish
+Source0:	https://cpan.metacpan.org/authors/id/D/DP/DPARIS/Crypt-Blowfish-%{modver}.tar.gz
 BuildRequires:	make
 Buildrequires:	perl-devel
 Buildrequires:	glibc-devel
